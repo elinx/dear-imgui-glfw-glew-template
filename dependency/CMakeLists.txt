@@ -18,3 +18,13 @@ add_library(imgui STATIC
 )
 
 target_include_directories(imgui PUBLIC imgui imgui/backends)
+
+add_library(implot
+    implot/implot_demo.cpp
+    implot/implot_internal.h
+    implot/implot_items.cpp
+    implot/implot.cpp
+    implot/implot.h
+)
+
+target_include_directories(implot PUBLIC implot imgui)

@@ -14,6 +14,6 @@ add_subdirectory(dependency)
 add_executable(imgui-template main.cpp)
 # target_include_directories(imgui-template )
 target_link_libraries(imgui-template ${CONAN_LIBS})
-target_link_libraries(imgui-template imgui)
+target_link_libraries(imgui-template imgui implot)
 
 # add_subdirectory(examples)
